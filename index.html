@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--The login button -->
+    <div class="main_login">
+<button class="main_button" onclick="document.getElementById('container').style.display='block'" >LOG-IN</button>
+</div>
+
+<!-- main_container -->
+<div id="container" class="container">
+
+    <!-- closing by cross -->
+    <span class="cross" onclick="document.getElementById('container').style.display='none'" >&times;</span>
+
+    
+    <!-- start form area -->
+    <form action="">
+
+    <!-- section_one -->
+    <div class="section_one  ">
+        <img src="User-Avatar-in-Suit-PNG.png" alt="avatar" width="40%">
+    </div>
+
+    <!-- scetion_two -->
+    <div class="section_two  ">
+        <label for="uname" ><b>Username</b></label>
+        <input type="text" name="uname" placeholder="Enter Username" required >
+        <label for="psw" ><b>Password</b></label>
+        <input type="password" name="psw" placeholder="Enter Password" required>
+        <button id="login"  type="submit" ><b>Login</b></button>
+        <label >
+            <input type="checkbox" checked>Remember me
+        </label>
+    </div>
+
+    <!-- section_three -->
+    <div class="section_three  ">
+        <button id="cancel"  onclick="document.getElementById('container').style.display='none'" >Cancel</button>
+    </div>
+    </form>
+</div>
+</body>
+</html>
